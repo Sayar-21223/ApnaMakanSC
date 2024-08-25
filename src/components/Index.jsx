@@ -558,10 +558,12 @@ import s3 from '../images/s-3.jpg';
 import s4 from '../images/s-4.jpg';
 import s5 from '../images/s-5.jpg';
 import s6 from '../images/s-6.jpg';
-// import img2 from '../components/images/1.jpg';
-// import img4 from '../image/4.jpg';
-// import img3 from '../image/3.jpeg';
-// import img1 from '../image/1.jpg';
+import img1 from '../images/img1.jpg';
+import img2 from '../images/img2.jpg';
+import img3 from '../images/img3.jpg';
+import img4 from '../images/img4.jpg';
+import img5 from '../images/img5.jpg';
+
 
 
 
@@ -1664,135 +1666,378 @@ const handleGetProperty = async () => {
             </div>
           </div> */}
 
-{/* <section className="team" id="team">
-  <h1 className="heading" style={{ marginTop: '80px' }}>Our Team</h1>
-  <div className="container2">
-    <div className="card">
+<section
+  className="team"
+  id="team"
+  style={{ marginTop: '80px', padding: '40px', backgroundColor: '#f9f9f9' }}
+>
+  <h1
+    className="heading"
+    style={{ textAlign: 'center', marginBottom: '40px', fontSize: '36px' }}
+  >
+    Our Team
+  </h1>
+  <div
+    className="container2"
+    style={{
+      display: 'flex',
+      flexWrap: 'wrap',
+      justifyContent: 'center',
+      gap: '20px',
+    }}
+  >
+    {/* Card 1 */}
+    <div
+      className="card"
+      style={{
+        backgroundColor: '#fff',
+        borderRadius: '10px',
+        boxShadow: '0 4px 6px rgba(0,0,0,0.1)',
+        width: '300px',
+        textAlign: 'center',
+        padding: '20px',
+      }}
+    >
       <div className="content1">
-        <div className="imgbx">
-          <img src={img2} alt="Sugnik Tarafder" />
+        <div
+          className="imgbx"
+          style={{
+            width: '150px',
+            height: '150px',
+            margin: '0 auto',
+            borderRadius: '50%',
+            overflow: 'hidden',
+            marginBottom: '20px',
+          }}
+        >
+          <img
+            src={img3}
+            alt="Sugnik Tarafder"
+            style={{ width: '100%', height: '100%', objectFit: 'cover' }}
+          />
         </div>
         <div className="contentbx">
-          <h3>
+          <h3 style={{ fontSize: '24px', marginBottom: '10px' }}>
             Sugnik Tarafder
             <br />
-            <span>Cloud Database Developer<br />Hooghly Engineering & Technology College (HETC)</span>
+            <span style={{ fontSize: '16px', color: '#777' }}>
+              Backend Developer
+              <br />
+              Hooghly Engineering & Technology College (HETC)
+            </span>
           </h3>
         </div>
       </div>
-      <ul className="sci">
-        <li style={{ '--i': 1 }}>
-          <a href="https://github.com/ArjoSugnik">
+      <ul
+        className="sci"
+        style={{
+          display: 'flex',
+          justifyContent: 'center',
+          listStyle: 'none',
+          padding: 0,
+          marginTop: '15px',
+        }}
+      >
+        {/* <li style={{ margin: '0 10px' }}>
+          <a href="https://github.com/ArjoSugnik" style={{ color: '#333', fontSize: '20px' }}>
             <i className="fa-brands fa-github"></i>
           </a>
         </li>
-        <li style={{ '--i': 2 }}>
-          <a href="https://www.linkedin.com/in/sugnik-tarafder">
+        <li style={{ margin: '0 10px' }}>
+          <a href="https://www.linkedin.com/in/sugnik-tarafder" style={{ color: '#0077b5', fontSize: '20px' }}>
             <i className="fa-brands fa-linkedin"></i>
           </a>
         </li>
-        <li style={{ '--i': 3 }}>
-          <a href="https://twitter.com/sugniktarafder">
+        <li style={{ margin: '0 10px' }}>
+          <a href="https://twitter.com/sugniktarafder" style={{ color: '#1da1f2', fontSize: '20px' }}>
             <i className="fa-brands fa-twitter"></i>
           </a>
-        </li>
+        </li> */}
       </ul>
     </div>
-    <div className="card">
+
+    {/* Card 2 */}
+    <div
+      className="card"
+      style={{
+        backgroundColor: '#fff',
+        borderRadius: '10px',
+        boxShadow: '0 4px 6px rgba(0,0,0,0.1)',
+        width: '300px',
+        textAlign: 'center',
+        padding: '20px',
+      }}
+    >
       <div className="content1">
-        <div className="imgbx">
-          <img src={img4} alt="Sayar Paul" />
+        <div
+          className="imgbx"
+          style={{
+            width: '150px',
+            height: '150px',
+            margin: '0 auto',
+            borderRadius: '50%',
+            overflow: 'hidden',
+            marginBottom: '20px',
+          }}
+        >
+          <img
+            src={img5}
+            alt="Sayar Paul"
+            style={{ width: '100%', height: '100%', objectFit: 'cover' }}
+          />
         </div>
         <div className="contentbx">
-          <h3>
+          <h3 style={{ fontSize: '24px', marginBottom: '10px' }}>
             Sayar Paul
             <br />
-            <span>Frontend Developer<br />Hooghly Engineering & Technology College (HETC)</span>
+            <span style={{ fontSize: '16px', color: '#777' }}>
+              Frontend Developer
+              <br />
+              Hooghly Engineering & Technology College (HETC)
+            </span>
           </h3>
         </div>
       </div>
-      <ul className="sci">
-        <li style={{ '--i': 1 }}>
-          <a href="https://github.com/Sayar-21223">
+      <ul
+        className="sci"
+        style={{
+          display: 'flex',
+          justifyContent: 'center',
+          listStyle: 'none',
+          padding: 0,
+          marginTop: '15px',
+        }}
+      >
+        {/* <li style={{ margin: '0 10px' }}>
+          <a href="https://github.com/Sayar-21223" style={{ color: '#333', fontSize: '20px' }}>
             <i className="fa-brands fa-github"></i>
           </a>
         </li>
-        <li style={{ '--i': 2 }}>
-          <a href="https://www.linkedin.com/in/sayar-paul-9b7535254/">
+        <li style={{ margin: '0 10px' }}>
+          <a href="https://www.linkedin.com/in/sayar-paul-9b7535254/" style={{ color: '#0077b5', fontSize: '20px' }}>
             <i className="fa-brands fa-linkedin"></i>
           </a>
         </li>
-        <li style={{ '--i': 3 }}>
-          <a href="https://twitter.com/sayar_paul">
+        <li style={{ margin: '0 10px' }}>
+          <a href="https://twitter.com/sayar_paul" style={{ color: '#1da1f2', fontSize: '20px' }}>
             <i className="fa-brands fa-twitter"></i>
           </a>
-        </li>
+        </li> */}
       </ul>
     </div>
-    <div className="card">
+
+    {/* Card 3 */}
+    <div
+      className="card"
+      style={{
+        backgroundColor: '#fff',
+        borderRadius: '10px',
+        boxShadow: '0 4px 6px rgba(0,0,0,0.1)',
+        width: '300px',
+        textAlign: 'center',
+        padding: '20px',
+      }}
+    >
       <div className="content1">
-        <div className="imgbx">
-          <img src={img3} alt="Debjit Mitra" />
+        <div
+          className="imgbx"
+          style={{
+            width: '150px',
+            height: '150px',
+            margin: '0 auto',
+            borderRadius: '50%',
+            overflow: 'hidden',
+            marginBottom: '20px',
+          }}
+        >
+          <img
+            src={img2}
+            alt="Sourodip Ghosh"
+            style={{ width: '100%', height: '100%', objectFit: 'cover' }}
+          />
         </div>
         <div className="contentbx">
-          <h3>
-            Debjit Mitra
-            <br />
-            <span>Full Stack Developer<br />Hooghly Engineering & Technology College (HETC)</span>
-          </h3>
-        </div>
-      </div>
-      <ul className="sci">
-        <li style={{ '--i': 1 }}>
-          <a href="https://github.com/debjitmitra000">
-            <i className="fa-brands fa-github"></i>
-          </a>
-        </li>
-        <li style={{ '--i': 2 }}>
-          <a href="https://www.linkedin.com/in/debjitmitra000/">
-            <i className="fa-brands fa-linkedin"></i>
-          </a>
-        </li>
-        <li style={{ '--i': 3 }}>
-          <a href="https://twitter.com/debjitmitra000">
-            <i className="fa-brands fa-twitter"></i>
-          </a>
-        </li>
-      </ul>
-    </div>
-    <div className="card">
-      <div className="content1">
-        <div className="imgbx">
-          <img src={img1} alt="Sourodip Ghosh" />
-        </div>
-        <div className="contentbx">
-          <h3>
+          <h3 style={{ fontSize: '24px', marginBottom: '10px' }}>
             Sourodip Ghosh
             <br />
-            <span>Backend Developer<br />Hooghly Engineering & Technology College (HETC)</span>
+            <span style={{ fontSize: '16px', color: '#777' }}>
+              WEB3 Developer
+              <br />
+              Hooghly Engineering & Technology College (HETC)
+            </span>
           </h3>
         </div>
       </div>
-      <ul className="sci">
-        <li style={{ '--i': 1 }}>
-          <a href="https://github.com/RajSourodip">
+      <ul
+        className="sci"
+        style={{
+          display: 'flex',
+          justifyContent: 'center',
+          listStyle: 'none',
+          padding: 0,
+          marginTop: '15px',
+        }}
+      >
+        {/* <li style={{ margin: '0 10px' }}>
+          <a href="https://github.com/debjitmitra000" style={{ color: '#333', fontSize: '20px' }}>
             <i className="fa-brands fa-github"></i>
           </a>
         </li>
-        <li style={{ '--i': 2 }}>
-          <a href="https://www.linkedin.com/in/sourodip-ghosh-177662253/">
+        <li style={{ margin: '0 10px' }}>
+          <a href="https://www.linkedin.com/in/debjitmitra000/" style={{ color: '#0077b5', fontSize: '20px' }}>
             <i className="fa-brands fa-linkedin"></i>
           </a>
         </li>
-        <li style={{ '--i': 3 }}>
-          <a href="https://twitter.com/40Sourodip?t=Pw_FrbaSAcJ2LnqQQgZ5LA&s=08">
+        <li style={{ margin: '0 10px' }}>
+          <a href="https://twitter.com/debjitmitra000" style={{ color: '#1da1f2', fontSize: '20px' }}>
             <i className="fa-brands fa-twitter"></i>
           </a>
+        </li> */}
+      </ul>
+    </div>
+
+    {/*card 4*/}
+    <div
+      className="card"
+      style={{
+        backgroundColor: '#fff',
+        borderRadius: '10px',
+        boxShadow: '0 4px 6px rgba(0,0,0,0.1)',
+        width: '300px',
+        textAlign: 'center',
+        padding: '20px',
+      }}
+    >
+      <div className="content1">
+        <div
+          className="imgbx"
+          style={{
+            width: '150px',
+            height: '150px',
+            margin: '0 auto',
+            borderRadius: '50%',
+            overflow: 'hidden',
+            marginBottom: '20px',
+          }}
+        >
+          <img
+            src={img4}
+            alt="Sucharita Kumar "
+            style={{ width: '100%', height: '100%', objectFit: 'cover' }}
+          />
+        </div>
+        <div className="contentbx">
+          <h3 style={{ fontSize: '24px', marginBottom: '10px' }}>
+            Sucharita Kumar
+            <br />
+            <span style={{ fontSize: '16px', color: '#777' }}>
+              Full Stack Developer
+              <br />
+              Hooghly Engineering & Technology College (HETC)
+            </span>
+          </h3>
+        </div>
+      </div>
+      <ul
+        className="sci"
+        style={{
+          display: 'flex',
+          justifyContent: 'center',
+          listStyle: 'none',
+          padding: 0,
+          marginTop: '15px',
+        }}
+      >
+        {/* <li style={{ margin: '0 10px' }}>
+          <a href="https://github.com/Sayar-21223" style={{ color: '#333', fontSize: '20px' }}>
+            <i className="fa-brands fa-github"></i>
+          </a>
         </li>
+        <li style={{ margin: '0 10px' }}>
+          <a href="https://www.linkedin.com/in/sayar-paul-9b7535254/" style={{ color: '#0077b5', fontSize: '20px' }}>
+            <i className="fa-brands fa-linkedin"></i>
+          </a>
+        </li>
+        <li style={{ margin: '0 10px' }}>
+          <a href="https://twitter.com/sayar_paul" style={{ color: '#1da1f2', fontSize: '20px' }}>
+            <i className="fa-brands fa-twitter"></i>
+          </a>
+        </li> */}
+      </ul>
+    </div>
+
+    {/* Card 5 */}
+    <div
+      className="card"
+      style={{
+        backgroundColor: '#fff',
+        borderRadius: '10px',
+        boxShadow: '0 4px 6px rgba(0,0,0,0.1)',
+        width: '300px',
+        textAlign: 'center',
+        padding: '20px',
+      }}
+    >
+      <div className="content1">
+        <div
+          className="imgbx"
+          style={{
+            width: '150px',
+            height: '150px',
+            margin: '0 auto',
+            borderRadius: '50%',
+            overflow: 'hidden',
+            marginBottom: '20px',
+          }}
+        >
+          <img
+            src={img1}
+            alt="Akash Poddar"
+            style={{ width: '100%', height: '100%', objectFit: 'cover' }}
+          />
+        </div>
+        <div className="contentbx">
+          <h3 style={{ fontSize: '24px', marginBottom: '10px' }}>
+            Akash Poddar
+            <br />
+            <span style={{ fontSize: '16px', color: '#777' }}>
+              Frontend Developer
+              <br />
+              Hooghly Engineering & Technology College (HETC)
+            </span>
+          </h3>
+        </div>
+      </div>
+      <ul
+        className="sci"
+        style={{
+          display: 'flex',
+          justifyContent: 'center',
+          listStyle: 'none',
+          padding: 0,
+          marginTop: '15px',
+        }}
+      >
+        {/* <li style={{ margin: '0 10px' }}>
+          <a href="https://github.com/RajSourodip" style={{ color: '#333', fontSize: '20px' }}>
+            <i className="fa-brands fa-github"></i>
+          </a>
+        </li>
+        <li style={{ margin: '0 10px' }}>
+          <a href="https://www.linkedin.com/in/sourodip-ghosh-177662253/" style={{ color: '#0077b5', fontSize: '20px' }}>
+            <i className="fa-brands fa-linkedin"></i>
+          </a>
+        </li>
+        <li style={{ margin: '0 10px' }}>
+          <a href="https://twitter.com/40Sourodip?t=Pw_FrbaSAcJ2LnqQQgZ5LA&s=08" style={{ color: '#1da1f2', fontSize: '20px' }}>
+            <i className="fa-brands fa-twitter"></i>
+          </a>
+        </li> */}
       </ul>
     </div>
   </div>
-</section> */}
+</section>
+
           <div className="footer-info">
             <p>
               &copy; <span id="displayYear"></span> All Rights Reserved By
